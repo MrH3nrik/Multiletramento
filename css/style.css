@@ -1,0 +1,983 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f4f0e8;
+
+    color:#222;
+
+    line-height:1.7;
+}
+
+/* HEADER */
+
+header{
+
+    background:#2c1810;
+
+    color:white;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.25);
+}
+
+.logo-area{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:15px;
+}
+
+.logo-area img{
+
+    height:60px;
+
+    width:auto;
+}
+
+.titulo-site{
+
+    text-align:center;
+}
+
+.titulo-site h2{
+
+    font-size:1.8rem;
+}
+
+.titulo-site p{
+
+    font-size:.9rem;
+}
+
+nav{
+
+    background:#3d2419;
+}
+
+nav ul{
+
+    display:flex;
+
+    justify-content:center;
+
+    list-style:none;
+
+    flex-wrap:wrap;
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    display:block;
+
+    padding:15px 20px;
+
+    transition:.3s;
+}
+
+nav a:hover{
+
+    background:#8b5e3c;
+}
+
+/* HERO */
+
+.hero{
+
+    height:90vh;
+
+    background:url("../img/favela.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.65);
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+    color:white;
+
+    max-width:900px;
+
+    padding:20px;
+}
+
+.hero h1{
+
+    font-size:4rem;
+
+    margin-bottom:20px;
+
+    letter-spacing:3px;
+}
+
+.hero h2{
+
+    font-weight:400;
+
+    margin-bottom:20px;
+}
+
+.hero p{
+
+    font-size:1.1rem;
+
+    margin-bottom:30px;
+}
+
+/* BOTÃO */
+
+.btn{
+
+    display:inline-block;
+
+    background:#d4a373;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    transition:.3s;
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+    background:#b07a4d;
+}
+
+/* SEÇÕES */
+
+section{
+
+    padding:90px 10%;
+}
+
+.container{
+
+    max-width:1000px;
+
+    margin:auto;
+}
+
+section h2{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    color:#5c3a21;
+
+    font-size:2.2rem;
+}
+
+/* INTRO */
+
+.intro p{
+
+    margin-bottom:20px;
+
+    text-align:justify;
+}
+
+/* CARDS */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+}
+
+.card{
+
+    text-decoration:none;
+
+    color:#222;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    transition:.4s;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+.card-icon{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+    color:#5c3a21;
+}
+
+/* CITAÇÃO */
+
+.quote{
+
+    background:#2c1810;
+
+    color:white;
+
+    text-align:center;
+}
+
+.quote-box{
+
+    max-width:900px;
+
+    margin:auto;
+}
+
+.quote p{
+
+    font-size:2rem;
+
+    font-style:italic;
+
+    margin-bottom:20px;
+}
+
+/* TEMAS */
+
+.highlight-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:20px;
+}
+
+.highlight{
+
+    background:white;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    font-size:2rem;
+
+    transition:.3s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.highlight:hover{
+
+    transform:scale(1.05);
+}
+
+.highlight h3{
+
+    margin-top:10px;
+
+    font-size:1rem;
+}
+
+/* FOOTER */
+
+footer{
+
+    background:#1f120d;
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px 20px;
+}
+
+.integrantes{
+
+    margin-top:25px;
+}
+
+.integrantes ul{
+
+    list-style:none;
+
+    margin-top:10px;
+}
+
+.integrantes li{
+
+    margin:5px 0;
+}
+
+.creditos{
+
+    margin-top:30px;
+
+    opacity:.8;
+}
+
+/* ANIMAÇÕES */
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:all 1s;
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width:768px){
+
+    .hero h1{
+
+        font-size:2.5rem;
+    }
+
+    .hero h2{
+
+        font-size:1.2rem;
+    }
+
+    .logo-area{
+
+        flex-direction:column;
+    }
+
+    nav ul{
+
+        flex-direction:column;
+    }
+}
+
+/* BOTÃO TOPO */
+
+#btnTopo{
+
+    position:fixed;
+
+    bottom:25px;
+
+    right:25px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#8b5e3c;
+
+    color:white;
+
+    font-size:1.5rem;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:9999;
+}
+
+#btnTopo:hover{
+
+    transform:scale(1.1);
+}
+
+#btnTopo.mostrar{
+
+    opacity:1;
+
+    visibility:visible;
+}
+
+/* HERO AUTORA */
+
+.hero-autora{
+
+    height:70vh;
+
+    background:url("../img/carolina.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.overlay-autora{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.6);
+}
+
+.hero-autora-content{
+
+    position:relative;
+
+    z-index:2;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+.hero-autora-content h1{
+
+    font-size:3.5rem;
+
+    margin-bottom:20px;
+}
+
+/* BIOGRAFIA */
+
+.bio-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+    align-items:center;
+
+    max-width:1200px;
+
+    margin:auto;
+}
+
+.foto-carolina{
+
+    width:100%;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+/* TIMELINE */
+
+.timeline{
+
+    max-width:900px;
+
+    margin:auto;
+
+    position:relative;
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:#8b5e3c;
+}
+
+.timeline-item{
+
+    margin:40px 0;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+}
+
+.timeline-date{
+
+    background:#8b5e3c;
+
+    color:white;
+
+    padding:10px 20px;
+
+    border-radius:10px;
+
+    font-weight:bold;
+}
+
+.timeline-content{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+/* DESENHO */
+
+.desenho-grupo{
+
+    display:block;
+
+    max-width:700px;
+
+    width:100%;
+
+    margin:40px auto;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.texto-central{
+
+    text-align:center;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+    .bio-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .timeline::before{
+
+        left:20px;
+    }
+
+    .timeline-item{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        padding-left:40px;
+    }
+
+}
+
+/* HERO LIVRO */
+
+.hero-livro{
+
+    height:70vh;
+
+    background:url("../img/livro-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.overlay-livro{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.6);
+}
+
+.hero-livro-content{
+
+    position:relative;
+
+    z-index:2;
+
+    color:white;
+
+    text-align:center;
+}
+
+.hero-livro-content h1{
+
+    font-size:4rem;
+}
+
+/* DIÁRIO */
+
+.diario-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+}
+
+.diario{
+
+    background:#fffdf7;
+
+    border-left:8px solid #8b5e3c;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+/* HORÁRIOS */
+
+.horarios{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin:30px 0;
+}
+
+.horarios button{
+
+    background:#8b5e3c;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 25px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.horarios button:hover{
+
+    background:#6d4428;
+}
+
+#momento{
+
+    max-width:800px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    text-align:center;
+}
+
+/* HERO REALIDADE */
+
+.hero-realidade{
+
+    height:70vh;
+
+    background:url("../img/brasil-atual.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.overlay-realidade{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.65);
+}
+
+.hero-realidade-content{
+
+    position:relative;
+
+    z-index:2;
+
+    color:white;
+
+    text-align:center;
+
+    max-width:900px;
+}
+
+.hero-realidade-content h1{
+
+    font-size:3.5rem;
+
+    margin-bottom:20px;
+}
+
+/* COMPARAÇÃO */
+
+.comparacao{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+}
+
+.comparacao-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.comparacao-card h3{
+
+    color:#8b5e3c;
+
+    margin-bottom:15px;
+}
+
+.comparacao-card hr{
+
+    margin:20px 0;
+}
+
+/* GRÁFICOS */
+
+.grafico{
+
+    max-width:900px;
+
+    margin:auto;
+}
+
+.barra{
+
+    margin:25px 0;
+}
+
+.barra span{
+
+    font-weight:bold;
+
+    display:block;
+
+    margin-bottom:8px;
+}
+
+.progresso{
+
+    color:white;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+}
+
+.fome{
+
+    width:95%;
+
+    background:#8b0000;
+}
+
+.desigualdade{
+
+    width:90%;
+
+    background:#b22222;
+}
+
+.pobreza{
+
+    width:85%;
+
+    background:#cd5c5c;
+}
+
+.educacao{
+
+    width:60%;
+
+    background:#4682b4;
+}
+
+/* REFLEXÃO */
+
+.reflexao{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.reflexao p{
+
+    margin-bottom:20px;
+
+    text-align:justify;
+}
+
+/* FRASE */
+
+.frase-impacto{
+
+    text-align:center;
+
+    padding:40px;
+
+    background:#2c1810;
+
+    color:white;
+
+    border-radius:20px;
+}
+
+.frase-impacto h2{
+
+    color:white;
+
+    margin-bottom:20px;
+}
