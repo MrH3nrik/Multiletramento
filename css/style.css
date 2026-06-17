@@ -483,18 +483,28 @@ footer {
 }
 
 .timeline-date {
+    display: fixed;
+    min-width: 80px;
     background: var(--cor-primaria);
     color: var(--cor-texto-branco);
     padding: var(--espacamento-pequeno) var(--espacamento-media);
     border-radius: 10px;
+    margin-right: 20px;
     font-weight: bold;
 }
 
 .timeline-content {
     background: var(--cor-fundo-card);
     padding: var(--espacamento-media);
+    margin-left: var(--espacamento-media);
     border-radius: 15px;
     box-shadow: var(--sombra-leve);
+    transition: var(--transicao);
+}
+
+.timeline-content:hover {
+    transform: translateX(5px);
+    box-shadow: var(--sombra-media);
 }
 
 /* ╔════════════════════════════════════════════════════════════════╗ */

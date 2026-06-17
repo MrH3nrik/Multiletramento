@@ -1,3 +1,7 @@
+/* ╔════════════════════════════════════════════════════════════════╗ */
+/* ║            CARREGA OS COMPONENTES HEADER E FOOTER              ║ */
+/* ╚════════════════════════════════════════════════════════════════╝ */
+
 fetch('./components/header.html')
     .then(response => response.text())
     .then(data => {

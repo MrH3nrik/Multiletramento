@@ -1,155 +1,122 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Carolina Maria de Jesus</title>
 
-    <link rel="stylesheet"
-          href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
+    <!-- CONTAINER DO HEADER PARA "IMPORTAÇÃO" -->
+    <div id="header-container"></div>
 
-<!-- CABEÇALHO COM LOGO E MENU DE NAVEGAÇÃO -->
-<header>
-    <div class="logo-area">
-        <a href="https://www.cotuca.unicamp.br/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/logo-cotuca.png" alt="Logo Cotuca">
-        </a>
-        <div class="titulo-site">
-            <h2>Quarto de Despejo</h2>
-            <p>Projeto Multiletramentos</p>
+    <!-- SEÇÃO DESTAQUE COM IMAGEM DE FUNDO -->
+    <section class="hero-autora">
+        <div class="overlay-autora"></div>
+        <div class="hero-autora-content">
+            <h1>Carolina Maria de Jesus</h1>
+            <p>A escritora que transformou sua vivência em uma das obras mais importantes da literatura brasileira.</p>
         </div>
-        <a href="https://www.unicamp.br/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/logo-unicamp.png" alt="Logo Unicamp">
-        </a>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="autora.html">Carolina</a></li>
-            <li><a href="livro.html">O Livro</a></li>
-            <li><a href="realidade.html">Brasil Atual</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-        </ul>
-    </nav>
-</header>
+    </section>
 
-<!-- SEÇÃO DESTAQUE COM IMAGEM DE FUNDO -->
-<section class="hero-autora">
-    <div class="overlay-autora"></div>
-    <div class="hero-autora-content">
-        <h1>Carolina Maria de Jesus</h1>
-        <p>A escritora que transformou sua vivência em uma das obras mais importantes da literatura brasileira.</p>
-    </div>
-</section>
+    <!-- SEÇÃO BIOGRÁFICA COM FOTO E TEXTO -->
+    <section class="hidden">
+        <h2>Quem foi Carolina Maria de Jesus?</h2>
+        <div class="bio-grid">
+            <div>
+                <img src="assets/carolina2.png" alt="Carolina Maria de Jesus" class="foto-carolina">
+            </div>
 
-<!-- SEÇÃO BIOGRÁFICA COM FOTO E TEXTO -->
-<section class="hidden">
-    <h2>Quem foi Carolina Maria de Jesus?</h2>
-    <div class="bio-grid">
-        <div>
-            <img src="assets/carolina.png" alt="Carolina Maria de Jesus" class="foto-carolina">
+            <div>
+                <p>Carolina Maria de Jesus nasceu em 14 de março de 1914, na cidade de Sacramento, Minas Gerais.</p>
+                <br>
+                <p>Com poucos anos de estudo formal, desenvolveu desde cedo o gosto pela leitura e pela escrita.</p>
+                <br>
+                <p>Mudou-se para São Paulo e passou a viver na Favela do Canindé, onde sustentava seus filhos trabalhando como catadora de papel.</p>
+                <br>
+                <p>Durante esse período, registrou em cadernos seu cotidiano marcado pela fome, pobreza e desigualdade social.</p>
+                <br>
+                <p>Esses escritos deram origem ao livro "Quarto de Despejo", publicado em 1960.</p>
+            </div>
         </div>
+    </section>
 
-        <div>
-            <p>Carolina Maria de Jesus nasceu em 14 de março de 1914, na cidade de Sacramento, Minas Gerais.</p>
-            <p>Com poucos anos de estudo formal, desenvolveu desde cedo o gosto pela leitura e pela escrita.</p>
-            <p>Mudou-se para São Paulo e passou a viver na Favela do Canindé, onde sustentava seus filhos trabalhando como catadora de papel.</p>
-            <p>Durante esse período, registrou em cadernos seu cotidiano marcado pela fome, pobreza e desigualdade social.</p>
-            <p>Esses escritos deram origem ao livro "Quarto de Despejo", publicado em 1960.</p>
-        </div>
-    </div>
-</section>
+    <!-- SEÇÃO COM LINHA DO TEMPO DOS EVENTOS -->
+    <section class="timeline-section hidden">
+        <h2>Linha do Tempo</h2>
+        <div class="timeline">
 
-<!-- SEÇÃO COM LINHA DO TEMPO DOS EVENTOS -->
-<section class="timeline-section hidden">
-    <h2>Linha do Tempo</h2>
-    <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">1914</div>
+                <div class="timeline-content">Nascimento em Sacramento (MG).</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">1947</div>
+                <div class="timeline-content">Mudança para São Paulo.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">1955</div>
+                <div class="timeline-content">Início dos registros que dariam origem ao livro.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">1960</div>
+                <div class="timeline-content">Publicação de Quarto de Despejo.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">1977</div>
+                <div class="timeline-content">Falecimento da autora.</div>
+            </div>
+        </div>
+    </section>
 
-        <div class="timeline-item">
-            <div class="timeline-date">1914</div>
-            <div class="timeline-content">Nascimento em Sacramento (MG).</div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-date">1947</div>
-            <div class="timeline-content">Mudança para São Paulo.</div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-date">1955</div>
-            <div class="timeline-content">Início dos registros que dariam origem ao livro.</div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-date">1960</div>
-            <div class="timeline-content">Publicação de Quarto de Despejo.</div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-date">1977</div>
-            <div class="timeline-content">Falecimento da autora.</div>
-        </div>
-    </div>
-</section>
+    <!-- SEÇÃO MOSTRANDO A IMPORTÂNCIA DA AUTORA -->
+    <section class="hidden">
+        <h2>Importância da Autora</h2>
+        <div class="cards">
 
-<!-- SEÇÃO MOSTRANDO A IMPORTÂNCIA DA AUTORA -->
-<section class="hidden">
-    <h2>Importância da Autora</h2>
-    <div class="cards">
-
-        <div class="card">
-            <div class="card-icon">📚</div>
-            <h3>Literatura</h3>
-            <p>Tornou-se uma das escritoras mais importantes da literatura brasileira.</p>
+            <div class="card">
+                <div class="card-icon">📚</div>
+                <h3>Literatura</h3>
+                <p>Tornou-se uma das escritoras mais importantes da literatura brasileira.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">✊🏿</div>
+                <h3>Representatividade</h3>
+                <p>Deu voz às populações marginalizadas e às mulheres negras.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🌎</div>
+                <h3>Impacto Social</h3>
+                <p>Sua obra continua sendo estudada e debatida em todo o mundo.</p>
+            </div>
         </div>
-        <div class="card">
-            <div class="card-icon">✊🏿</div>
-            <h3>Representatividade</h3>
-            <p>Deu voz às populações marginalizadas e às mulheres negras.</p>
-        </div>
-        <div class="card">
-            <div class="card-icon">🌎</div>
-            <h3>Impacto Social</h3>
-            <p>Sua obra continua sendo estudada e debatida em todo o mundo.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- SEÇÃO COM PRODUÇÕES ARTÍSTICAS DO GRUPO -->
-<section class="hidden">
-    <h2>Produção Artística do Grupo</h2>
-    <img src="assets/desenho-grupo.jpg" alt="Desenho da Carolina" class="desenho-grupo">
-    <p class="texto-central">Desenho produzido pelos integrantes como parte do projeto.</p>
-    <img src="assets/arte3d.jpg" alt="Arte da Carolina" class="desenho-grupo">
-    <p class="texto-central">Obra artística feita de materiais diversos produzida pelos integrantes como parte do projeto.</p>
-    <p class="texto-central">Representa a situação de pobreza e desigualdade social vivida por Carolina.</p>
-</section>
+    <!-- SEÇÃO COM PRODUÇÕES ARTÍSTICAS DO GRUPO -->
+    <section class="hidden">
+        <h2>Produção Artística do Grupo</h2>
+        <img src="assets/desenho-grupo.jpg" alt="Desenho da Carolina" class="desenho-grupo">
+        <p class="texto-central">Desenho produzido pelos integrantes como parte do projeto.</p>
+        <img src="assets/arte3d.jpg" alt="Arte da Carolina" class="desenho-grupo">
+        <p class="texto-central">Obra artística feita de materiais diversos produzida pelos integrantes como parte do projeto.</p>
+        <p class="texto-central">Representa a situação de pobreza e desigualdade social vivida por Carolina.</p>
+    </section>
 
-<!-- RODAPÉ COM INFORMAÇÕES DO PROJETO -->
-<footer>
-    <h3>Projeto Multiletramentos</h3>
-    <p>Baseado na obra Quarto de Despejo.</p>
-    <div class="integrantes">
-        <h4>Integrantes</h4>
-        <ul>
-            <li>Henrique Lopes</li>
-            <li>Henrique Manica</li>
-            <li>Vinícius Centurião</li>
-            <li>Daniel Senzaki</li>
-            <li>Eduardo Lage</li>
-            <li>Guilherme Braz</li>
-        </ul>
-    </div>
-</footer>
+    <!-- CONTAINER DO FOOTER PARA "IMPORTAÇÃO" -->
+    <div id="footer-container"></div>
 
-<script src="js/script.js"></script>
-
+    <script src="js/script.js"></script>
+    <script src="js/components_loader.js"></script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     /* ╔═══════════════════════════════════════════════════════════╗ */
-    /* ║      ANIMAÇÕES AO ROLAR A PÁGINA - HIDDEN / SHOW        ║ */
+    /* ║      ANIMAÇÕES AO ROLAR A PÁGINA - HIDDEN / SHOW          ║ */
     /* ╚═══════════════════════════════════════════════════════════╝ */
 
     const elementosOcultos = document.querySelectorAll(".hidden");
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     /* ╔═══════════════════════════════════════════════════════════╗ */
-    /* ║          BOTÃO FLUTUANTE - VOLTAR AO TOPO               ║ */
+    /* ║            BOTÃO FLUTUANTE - VOLTAR AO TOPO               ║ */
     /* ╚═══════════════════════════════════════════════════════════╝ */
 
     const botaoTopo = document.createElement("button");
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     /* ╔═══════════════════════════════════════════════════════════╗ */
-    /* ║      EFEITO DE DIGITAÇÃO NO TÍTULO PRINCIPAL            ║ */
+    /* ║        EFEITO DE DIGITAÇÃO NO TÍTULO PRINCIPAL            ║ */
     /* ╚═══════════════════════════════════════════════════════════╝ */
 
     const titulo = document.querySelector(".hero h1");
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }); /* Fim do DOMContentLoaded */
 
 /* ╔════════════════════════════════════════════════════════════════╗ */
-/* ║       FUNÇÃO GLOBAL - SIMULAR MOMENTO DO DIA (LIVRO)         ║ */
+/* ║         FUNÇÃO GLOBAL - SIMULAR MOMENTO DO DIA (LIVRO)         ║ */
 /* ╚════════════════════════════════════════════════════════════════╝ */
 
 /* Esta função deve estar disponível globalmente para ser chamada pelos botões */
