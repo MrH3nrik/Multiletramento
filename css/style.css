@@ -18,6 +18,7 @@
     --cor-fundo-body: #f4f0e8;
     --cor-fundo-card: white;
     --cor-fundo-footer: #1f120d;
+    --cor-fundo-quote: #eae1ce;
     
     /* Cores de Status */
     --cor-fome: #8b0000;
@@ -269,6 +270,8 @@ section h2 {
 .quote-box {
     max-width: 900px;
     margin: auto;
+    margin-bottom: 10px;
+    color: var(--cor-texto);
 }
 
 .quote p {
@@ -342,15 +345,19 @@ footer {
 
 /* Elementos ocultos que aparecem ao rolar */
 .hidden {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 1s;
+    opacity: 0 !important;
+    transform: translateY(40px) !important;
+    transition: all 1s !important;
+    display: block !important;
+    visibility: visible !important;
 }
 
 .show {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
+
+/* O IMPORTANT, POR ALGUMA RAZÃO, É ESSENCIAL PRAS ANIMAÇÕES SE TIRAR, O SITE NÃO CARREGARÁ*/
 
 /* Botão flutuante para voltar ao topo */
 #btnTopo {
@@ -580,6 +587,11 @@ footer {
 
 .hero-livro-content h1 {
     font-size: 4rem;
+}
+
+.hero-livro-content p {
+    font-size: 1.1rem;
+    margin-top: var(--espacamento-pequeno);
 }
 
 /* Grade de diários */
