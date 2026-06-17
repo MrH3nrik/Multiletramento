@@ -1,343 +1,139 @@
 <!DOCTYPE html>
-
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
-
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Brasil Atual</title>
+    <title>Brasil Atual - Quarto de Despejo</title>
 
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
 
-    <header>
+    <!-- CONTAINER DO HEADER PARA "IMPORTAÇÃO" -->
+    <div id="header-container"></div>
 
-        <div class="logo-area">
-
-            <a href="https://www.cotuca.unicamp.br/" target="_blank" rel="noopener noreferrer">
-                <img src="img/logo-cotuca.png" alt="Logo Cotuca">
-            </a>
-
-            <div class="titulo-site">
-
-                <h2>Quarto de Despejo</h2>
-
-                <p>Projeto Multiletramentos</p>
-
-            </div>
-
-            <a href="https://www.unicamp.br/" target="_blank" rel="noopener noreferrer">
-                <img src="img/logo-unicamp.png" alt="Logo Unicamp">
-            </a>
-
-        </div>
-
-        <nav>
-
-            <ul>
-
-                <li><a href="index.html">Início</a></li>
-                <li><a href="autora.html">Carolina</a></li>
-                <li><a href="livro.html">O Livro</a></li>
-                <li><a href="realidade.html">Brasil Atual</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-
-            </ul>
-
-        </nav>
-
-    </header>
-
-    <!-- HERO -->
-
+    <!-- SEÇÃO DESTAQUE -->
     <section class="hero-realidade">
-
         <div class="overlay-realidade"></div>
-
         <div class="hero-realidade-content">
-
-            <h1>
-                Quarto de Despejo e o Brasil Atual
-            </h1>
-
-            <p>
-                Mais de 60 anos após a publicação da obra,
-                muitos dos problemas relatados por Carolina
-                continuam presentes na sociedade brasileira.
-            </p>
-
+            <h1>Quarto de Despejo e o Brasil Atual</h1>
+            <p>Mais de 60 anos após a publicação da obra, muitos dos problemas relatados por Carolina continuam presentes na sociedade brasileira.</p>
         </div>
-
     </section>
 
-    <!-- INTRODUÇÃO -->
-
+    <!-- SEÇÃO INTRODUÇÃO -->
     <section class="hidden">
-
-        <h2>
-            A Atualidade da Obra
-        </h2>
-
+        <h2>A Atualidade da Obra</h2>
         <div class="container">
-
-            <p>
-
-                Embora Quarto de Despejo tenha sido publicado
-                em 1960, diversos temas apresentados pela autora
-                continuam fazendo parte da realidade brasileira.
-
-            </p>
-
-            <p>
-
-                Questões como pobreza, fome, desigualdade,
-                segregação urbana e exclusão social ainda
-                afetam milhões de pessoas em todo o país.
-
-            </p>
-
+            <p>Embora Quarto de Despejo tenha sido publicado em 1960, diversos temas apresentados pela autora continuam fazendo parte da realidade brasileira.</p>
+            <p>Questões como pobreza, fome, desigualdade, segregação urbana e exclusão social ainda afetam milhões de pessoas em todo o país.</p>
         </div>
-
     </section>
 
-    <!-- COMPARAÇÃO -->
-
+    <!-- SEÇÃO COMPARAÇÃO -->
     <section class="hidden">
-
-        <h2>
-            Comparação entre a Obra e a Atualidade
-        </h2>
-
+        <h2>Comparação entre a Obra e a Atualidade</h2>
         <div class="comparacao">
-
             <div class="comparacao-card">
-
                 <h3>🍞 Fome</h3>
-
-                <p>
-
-                    Carolina relata constantemente a dificuldade
-                    de conseguir alimento para seus filhos.
-
-                </p>
-
+                <p>Carolina relata constantemente a dificuldade de conseguir alimento para seus filhos.</p>
                 <hr>
-
-                <p>
-
-                    Atualmente, milhões de brasileiros ainda
-                    enfrentam insegurança alimentar.
-
-                </p>
-
+                <p>Atualmente, milhões de brasileiros ainda enfrentam insegurança alimentar.</p>
             </div>
-
             <div class="comparacao-card">
-
                 <h3>🏚️ Moradia</h3>
-
-                <p>
-
-                    A Favela do Canindé simboliza a precariedade
-                    habitacional.
-
-                </p>
-
+                <p>A Favela do Canindé simboliza a precariedade habitacional.</p>
                 <hr>
-
-                <p>
-
-                    Muitas famílias ainda vivem em áreas sem
-                    infraestrutura adequada.
-
-                </p>
-
+                <p>Muitas famílias ainda vivem em áreas sem infraestrutura adequada.</p>
             </div>
-
             <div class="comparacao-card">
-
                 <h3>⚖️ Desigualdade</h3>
-
-                <p>
-
-                    O livro mostra a enorme diferença entre
-                    ricos e pobres.
-
-                </p>
-
+                <p>O livro mostra a enorme diferença entre ricos e pobres.</p>
                 <hr>
-
-                <p>
-
-                    O Brasil continua entre os países mais
-                    desiguais do mundo.
-
-                </p>
-
+                <p>O Brasil continua entre os países mais desiguais do mundo.</p>
             </div>
-
         </div>
-
     </section>
 
     <!-- GRÁFICOS -->
 
     <section class="hidden">
-
-        <h2>
-            Temas Mais Presentes na Obra
-        </h2>
-
+        <h2>Tópicos Mais Presentes na Obra</h2>
         <p class="texto-central">
-
             O gráfico abaixo não representa dados estatísticos.
             Ele ilustra a importância relativa de cada tema
             dentro da narrativa e dos relatos de Carolina.
-
         </p>
-
         <div class="grafico">
-
             <div class="barra">
-
-                <span> Fome</span>
-
-                <div class="progresso fome">
-                    Tema predominante
-                </div>
-
+                <span>Fome</span>
+                <div class="progresso fome">Tema predominante</div>
             </div>
-
             <div class="barra">
-
-                <span> Desigualdade Social</span>
-
-                <div class="progresso desigualdade">
-                    Muito recorrente
-                </div>
-
+                <span>Desigualdade Social</span>
+                <div class="progresso desigualdade">Muito recorrente</div>
             </div>
-
             <div class="barra">
-
-                <span> Pobreza</span>
-
-                <div class="progresso pobreza">
-                    Presente em toda a obra
-                </div>
-
+                <span>Pobreza</span>
+                <div class="progresso pobreza">Presente em toda a obra</div>
             </div>
-
             <div class="barra">
-
-                <span> Educação</span>
-
-                <div class="progresso educacao">
-                    Tema secundário
-                </div>
-
+                <span>Educação</span>
+                <div class="progresso educacao">Tema secundário</div>
             </div>
-
         </div>
-
     </section>
 
     <!-- REFLEXÃO -->
 
     <section class="hidden">
-
-        <h2>
-            Reflexão Crítica
-        </h2>
-
+        <h2>Reflexão Crítica</h2>
         <div class="reflexao">
-
             <p>
-
                 A leitura de Quarto de Despejo permite
                 compreender que a pobreza não é apenas
                 resultado de escolhas individuais, mas
                 também consequência de processos históricos,
                 econômicos e sociais.
-
             </p>
-
             <p>
-
                 A obra evidencia como o espaço urbano
                 pode reproduzir desigualdades, separando
                 grupos sociais e limitando oportunidades.
-
             </p>
-
             <p>
-
                 Mesmo após décadas, os problemas descritos
                 por Carolina continuam desafiando a sociedade
                 brasileira e exigindo reflexão e ação.
-
             </p>
-
         </div>
-
     </section>
 
     <!-- FRASE FINAL -->
 
-    <section class="hidden">
-
-        <div class="frase-impacto">
-
-            <h2>
-
-                "Quem inventou a fome são os que comem."
-
-            </h2>
-
-            <p>
-                Carolina Maria de Jesus
-            </p>
-
+    <section class="quote hidden">
+        <div class="quote-box">
+            <p>"Quem inventou a fome são os que comem."</p>
+            <span>— Carolina Maria de Jesus</span>
         </div>
-
     </section>
 
-    <footer>
 
-        <h3>
-            Projeto Multiletramentos
-        </h3>
-
-        <p>
-            Quarto de Despejo • Carolina Maria de Jesus
-        </p>
-
-        <div class="integrantes">
-
-            <h4>Integrantes</h4>
-
-            <ul>
-
-                <li>Henrique Lopes</li>
-                <li>Henrique Manica</li>
-                <li>Vinícius Centurião</li>
-                <li>Daniel Senzaki</li>
-                <li>Eduardo Lage</li>
-                <li>Guilherme Braz</li>
-
-            </ul>
-
-        </div>
-
-    </footer>
+    <!-- CONTAINER DO FOOTER PARA "IMPORTAÇÃO" -->
+    <div id="footer-container"></div>
 
     <script src="js/script.js"></script>
+    <script src="js/components_loader.js"></script>
 
 </body>
 

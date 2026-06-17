@@ -1,1136 +1,861 @@
-/* RESET */
+/* ╔════════════════════════════════════════════════════════════════╗ */
+/* ║             VARIÁVEIS CSS - CORES E CONFIGURAÇÕES              ║ */
+/* ╚════════════════════════════════════════════════════════════════╝ */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+:root {
+    /* Cores Principais */
+    --cor-primaria: #8b5e3c;
+    --cor-primaria-escura: #6d4428;
+    --cor-fundo-header: #2c1810;
+    --cor-fundo-nav: #3d2419;
+    
+    /* Cores de Texto */
+    --cor-texto: #222;
+    --cor-texto-branco: white;
+    --cor-texto-secao: #5c3a21;
+    
+    /* Cores de Fundo */
+    --cor-fundo-body: #f4f0e8;
+    --cor-fundo-card: white;
+    --cor-fundo-footer: #1f120d;
+    --cor-fundo-quote: #eae1ce;
+    
+    /* Cores de Status */
+    --cor-fome: #8b0000;
+    --cor-desigualdade: #b22222;
+    --cor-pobreza: #cd5c5c;
+    --cor-educacao: rgb(172, 96, 96);
+    
+    /* Sombras */
+    --sombra-leve: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --sombra-media: 0 10px 25px rgba(0, 0, 0, 0.2);
+    --sombra-forte: 0 15px 30px rgba(0, 0, 0, 0.15);
+    
+    /* Transições */
+    --transicao: 0.3s;
+    --transicao-longa: 0.4s;
+    
+    /* Espaçamento */
+    --espacamento-pequeno: 15px;
+    --espacamento-media: 20px;
+    --espacamento-grande: 30px;
+    --espacamento-xl: 50px;
+    --espacamento-secao: 90px;
 }
 
-html{
-    scroll-behavior:smooth;
+/* ╔════════════════════════════════════════════════════════════════╗ */
+/* ║              RESET E ESTILOS BASE DA PÁGINA                    ║ */
+/* ╚════════════════════════════════════════════════════════════════╝ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-
-    font-family:'Poppins',sans-serif;
-
-    background:#f4f0e8;
-
-    color:#222;
-
-    line-height:1.7;
+html {
+    scroll-behavior: smooth;
 }
 
-/* HEADER */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--cor-fundo-body);
+    color: var(--cor-texto);
+    line-height: 1.7;
+}
+
+/* ╔════════════════════════════════════════════════════════════════╗ */
+/* ║                   CABEÇALHO E NAVEGAÇÃO                        ║ */
+/* ╚════════════════════════════════════════════════════════════════╝ */
 
 header{
-
-    background:#2c1810;
-
-    color:white;
-
-    position:sticky;
-
-    top:0;
-
-    z-index:1000;
-
-    box-shadow:0 3px 10px rgba(0,0,0,.25);
+    background: var(--cor-fundo-header);
+    color: var(--cor-texto-branco);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--sombra-media);
 }
 
 .logo-area{
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:20px;
-
-    padding:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--espacamento-media);
+    padding: var(--espacamento-pequeno);
 }
 
-.logo-area img{
-
-    height:60px;
-
-    width:auto;
+.logo-area img {
+    height: 60px;
+    width: auto;
 }
 
-.titulo-site{
-
-    text-align:center;
+.titulo-site {
+    text-align: center;
 }
 
-.titulo-site h2{
-
-    font-size:1.8rem;
+.titulo-site h2 {
+    font-size: 1.8rem;
 }
 
-.titulo-site p{
-
-    font-size:.9rem;
+.titulo-site p {
+    font-size: .9rem;
 }
 
-nav{
-
-    background:#3d2419;
+nav {
+    background: var(--cor-fundo-nav);
 }
 
-nav ul{
-
-    display:flex;
-
-    justify-content:center;
-
-    list-style:none;
-
-    flex-wrap:wrap;
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
 }
 
-nav a{
-
-    color:white;
-
-    text-decoration:none;
-
-    display:block;
-
-    padding:15px 20px;
-
-    transition:.3s;
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: var(--espacamento-pequeno) var(--espacamento-media);
+    transition: .3s;
+    border-radius: 10px;
 }
 
-nav a:hover{
-
-    background:#8b5e3c;
+nav a:hover {
+    background: var(--cor-primaria);
 }
 
-/* HERO */
+/* ╔════════════════════════════════════════════════════════════════╗ */
+/* ║            SEÇÕES DESTAQUE (HERO) - PÁGINA INICIAL             ║ */
+/* ╚════════════════════════════════════════════════════════════════╝ */
 
-.hero{
-
-    height:90vh;
-
-    background:url("../img/favela.jpg");
-
-    background-size:cover;
-
-    background-position:center;
-
-    position:relative;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
+.hero {
+    height: 90vh;
+    background: url("../assets/favela.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.hero-overlay{
-
-    position:absolute;
-
-    inset:0;
-
-    background:rgba(0,0,0,.65);
+/* Overlay escuro sobre a imagem */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
 }
 
-.hero-content{
-
-    position:relative;
-
-    z-index:2;
-
-    text-align:center;
-
-    color:white;
-
-    max-width:900px;
-
-    padding:20px;
+/* Conteúdo da seção hero */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--cor-texto-branco);
+    max-width: 1000px;
+    padding: var(--espacamento-grande);
 }
 
-.hero h1{
-
-    font-size:4rem;
-
-    margin-bottom:20px;
-
-    letter-spacing:3px;
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: var(--espacamento-medio);
+    letter-spacing: 3px;
 }
 
-.hero h2{
-
-    font-weight:400;
-
-    margin-bottom:20px;
+.hero h2 {
+    font-weight: 400;
+    color: oklch(76.9% 0.188 70.08);
+    margin-bottom: var(--espacamento-medio);
 }
 
-.hero p{
-
-    font-size:1.1rem;
-
-    margin-bottom:30px;
+.hero p {
+    font-size: 1.1rem;
+    margin-top: var(--espacamento-pequeno);
+    margin-bottom: var(--espacamento-grande);
 }
 
-/* BOTÃO */
+/* ╔════════════════════════════════════════════════════════════════╗ */
+/* ║                    BOTÕES PADRONIZADOS                         ║ */
+/* ╚════════════════════════════════════════════════════════════════╝ */
 
-.btn{
-
-    display:inline-block;
-
-    background:#d4a373;
-
-    color:white;
-
-    text-decoration:none;
-
-    padding:15px 35px;
-
-    border-radius:50px;
-
-    transition:.3s;
+.btn {
+    display: inline-block;
+    background: var(--cor-primaria);
+    color: var(--cor-texto-branco);
+    text-decoration: none;
+    padding: var(--espacamento-pequeno) var(--espacamento-grande);
+    border-radius: 50px;
+    transition: var(--transicao);
 }
 
-.btn:hover{
-
-    transform:translateY(-4px);
-
-    background:#b07a4d;
+.btn:hover {
+    transform: translateY(-4px);
+    background: var(--cor-primaria-escura);
 }
 
-/* SEÇÕES */
+/* ╔════════════════════════════════════════════════════════════════╗ */
+/* ║              SEÇÕES GENÉRICAS E CONTAINERS                     ║ */
+/* ╚════════════════════════════════════════════════════════════════╝ */
 
-section{
-
-    padding:90px 10%;
+section {
+    padding: var(--espacamento-secao) 10%;
 }
 
-.container{
-
-    max-width:1000px;
-
-    margin:auto;
+.container {
+    max-width: 1000px;
+    margin: auto;
 }
 
-section h2{
-
-    text-align:center;
-
-    margin-bottom:30px;
-
-    color:#5c3a21;
-
-    font-size:2.2rem;
+section h2 {
+    text-align: center;
+    margin-bottom: var(--espacamento-grande);
+    color: var(--cor-texto-secao);
+    font-size: 2.2rem;
 }
 
-/* INTRO */
-
-.intro p{
-
-    margin-bottom:20px;
-
-    text-align:justify;
+/* Parágrafo de introdução */
+.intro p {
+    margin-bottom: var(--espacamento-media);
+    text-align: justify;
 }
 
-/* CARDS */
+/* ╔════════════════════════════════════════════════════════════════╗ */
+/* ║                    CARDS E ELEMENTOS VISUAIS                   ║ */
+/* ╚════════════════════════════════════════════════════════════════╝ */
 
-.cards{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-    gap:30px;
-
-    margin-top:50px;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--espacamento-grande);
+    margin-top: var(--espacamento-xl);
 }
 
-.card{
-
-    text-decoration:none;
-
-    color:#222;
-
-    background:white;
-
-    padding:30px;
-
-    border-radius:20px;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-
-    transition:.4s;
+.card {
+    text-decoration: none;
+    color: var(--cor-texto);
+    background: var(--cor-fundo-card);
+    padding: var(--espacamento-grande);
+    border-radius: 20px;
+    box-shadow: var(--sombra-leve);
+    transition: var(--transicao-longa);
 }
 
-.card:hover{
-
-    transform:translateY(-10px);
-
-    box-shadow:0 15px 30px rgba(0,0,0,.15);
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--sombra-forte);
 }
 
-.card-icon{
-
-    font-size:3rem;
-
-    margin-bottom:20px;
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: var(--espacamento-media);
 }
 
-.card h3{
-
-    margin-bottom:15px;
-
-    color:#5c3a21;
+.card h3 {
+    margin-bottom: var(--espacamento-pequeno);
+    color: var(--cor-texto-secao);
 }
 
-/* CITAÇÃO */
+/* ╔════════════════════════════════════════════════════════════════╗ */
+/* ║                    SEÇÃO DE CITAÇÕES                           ║ */
+/* ╚════════════════════════════════════════════════════════════════╝ */
 
-.quote{
-
-    background:#2c1810;
-
-    color:white;
-
-    text-align:center;
+.quote {
+    background: var(--cor-fundo-quote);
+    color: var(--cor-texto-branco);
+    text-align: center;
 }
 
-.quote-box{
-
-    max-width:900px;
-
-    margin:auto;
+.quote-box {
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 10px;
+    color: var(--cor-texto);
 }
 
-.quote p{
-
-    font-size:2rem;
-
-    font-style:italic;
-
-    margin-bottom:20px;
+.quote p {
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: var(--espacamento-media);
 }
 
-/* TEMAS */
+/* ╔════════════════════════════════════════════════════════════════╗ */
+/* ║                   DESTAQUES E TEMAS                            ║ */
+/* ╚════════════════════════════════════════════════════════════════╝ */
 
-.highlight-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-
-    gap:20px;
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--espacamento-media);
 }
 
-.highlight{
-
-    background:white;
-
-    padding:30px;
-
-    text-align:center;
-
-    border-radius:15px;
-
-    font-size:2rem;
-
-    transition:.3s;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
+.highlight {
+    background: var(--cor-fundo-card);
+    padding: var(--espacamento-grande);
+    text-align: center;
+    border-radius: 15px;
+    font-size: 2rem;
+    transition: var(--transicao);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-.highlight:hover{
-
-    transform:scale(1.05);
+.highlight:hover {
+    transform: scale(1.05);
 }
 
-.highlight h3{
-
-    margin-top:10px;
-
-    font-size:1rem;
+.highlight h3 {
+    margin-top: var(--espacamento-pequeno);
+    font-size: 1rem;
 }
 
-/* FOOTER */
+/* ╔════════════════════════════════════════════════════════════════╗ */
+/* ║                       RODAPÉ (FOOTER)                          ║ */
+/* ╚════════════════════════════════════════════════════════════════╝ */
 
-footer{
-
-    background:#1f120d;
-
-    color:white;
-
-    text-align:center;
-
-    padding:50px 20px;
+footer {
+    background: var(--cor-fundo-footer);
+    color: var(--cor-texto-branco);
+    text-align: center;
+    padding: var(--espacamento-xl) var(--espacamento-media);
 }
 
-.integrantes{
-
-    margin-top:25px;
+.integrantes {
+    margin-top: var(--espacamento-grande);
 }
 
-.integrantes ul{
-
-    list-style:none;
-
-    margin-top:10px;
+.integrantes ul {
+    list-style: none;
+    margin-top: var(--espacamento-pequeno);
 }
 
-.integrantes li{
-
-    margin:5px 0;
+.integrantes li {
+    margin: 5px 0;
 }
 
-.creditos{
-
-    margin-top:30px;
-
-    opacity:.8;
+.instituicao {
+    margin-top: var(--espacamento-grande);
+    opacity: 0.8;
+    margin-bottom: -20px;
 }
 
-/* ANIMAÇÕES */
+/* ╔════════════════════════════════════════════════════════════════╗ */
+/* ║                ANIMAÇÕES E EFEITOS VISUAIS                     ║ */
+/* ╚════════════════════════════════════════════════════════════════╝ */
 
-.hidden{
-
-    opacity:0;
-
-    transform:translateY(40px);
-
-    transition:all 1s;
+/* Elementos ocultos que aparecem ao rolar */
+.hidden {
+    opacity: 0 !important;
+    transform: translateY(40px) !important;
+    transition: all 1s !important;
+    display: block !important;
+    visibility: visible !important;
 }
 
-.show{
-
-    opacity:1;
-
-    transform:translateY(0);
+.show {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 
-/* RESPONSIVIDADE */
+/* O IMPORTANT, POR ALGUMA RAZÃO, É ESSENCIAL PRAS ANIMAÇÕES SE TIRAR, O SITE NÃO CARREGARÁ*/
 
-@media(max-width:768px){
+/* Botão flutuante para voltar ao topo */
+#btnTopo {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background: var(--cor-primaria);
+    color: var(--cor-texto-branco);
+    font-size: 24px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transicao);
+    z-index: 9999;
+}
 
-    .hero h1{
+#btnTopo:hover {
+    transform: scale(1.1);
+}
 
-        font-size:2.5rem;
+#btnTopo.mostrar {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ╔════════════════════════════════════════════════════════════════╗ */
+/* ║            SEÇÃO AUTORA - CAROLINA MARIA DE JESUS              ║ */
+/* ╚════════════════════════════════════════════════════════════════╝ */
+
+/* Hero da página de autora */
+.hero-autora {
+    height: 70vh;
+    background: url("../assets/carolina.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-autora {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-autora-content {
+    position: relative;
+    z-index: 2;
+    color: var(--cor-texto-branco);
+    text-align: center;
+    padding: var(--espacamento-media);
+}
+
+.hero-autora-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: var(--espacamento-media);
+}
+
+/* Grade de biografia com foto e texto */
+.bio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--espacamento-xl);
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.foto-carolina {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: var(--sombra-media);
+}
+
+/* ╔════════════════════════════════════════════════════════════════╗ */
+/* ║               LINHA DO TEMPO (TIMELINE)                        ║ */
+/* ╚════════════════════════════════════════════════════════════════╝ */
+
+.timeline {
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+}
+
+/* Linha vertical que conecta os itens */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 130px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--cor-primaria);
+    border-radius: 10px;
+}
+
+.timeline-item {
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+}
+
+/* Pontos da timeline */
+.timeline-item::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: var(--cor-primaria);
+    border-radius: 50%;
+    position: absolute;
+    left: 124px;
+    z-index: 2;
+    border: 3px solid #f5f2eb;
+}
+
+.timeline-date {
+    display: fixed;
+    min-width: 80px;
+    background: var(--cor-primaria);
+    color: var(--cor-texto-branco);
+    padding: var(--espacamento-pequeno) var(--espacamento-media);
+    border-radius: 10px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.timeline-content {
+    background: var(--cor-fundo-card);
+    padding: var(--espacamento-media);
+    margin-left: var(--espacamento-media);
+    border-radius: 15px;
+    box-shadow: var(--sombra-leve);
+    transition: var(--transicao);
+}
+
+.timeline-content:hover {
+    transform: translateX(5px);
+    box-shadow: var(--sombra-media);
+}
+
+/* ╔════════════════════════════════════════════════════════════════╗ */
+/* ║            ELEMENTOS DE DESENHO E IMAGENS                      ║ */
+/* ╚════════════════════════════════════════════════════════════════╝ */
+
+.desenho-grupo {
+    display: block;
+    max-width: 600px;
+    width: 100%;
+    margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: var(--sombra-media);
+}
+
+.texto-central {
+    text-align: center;
+}
+
+/* ╔════════════════════════════════════════════════════════════════╗ */
+/* ║              RESPONSIVIDADE PARA TABLETS/MOBILE                ║ */
+/* ╚════════════════════════════════════════════════════════════════╝ */
+
+@media (max-width: 900px) {
+    .bio-grid {
+        grid-template-columns: 1fr;
     }
 
-    .hero h2{
-
-        font-size:1.2rem;
+    .timeline::before {
+        left: 20px;
     }
 
-    .logo-area{
-
-        flex-direction:column;
-    }
-
-    nav ul{
-
-        flex-direction:column;
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 40px;
     }
 }
 
-/* BOTÃO TOPO */
-
-#btnTopo{
-
-    position:fixed;
-
-    bottom:25px;
-
-    right:25px;
-
-    width:55px;
-
-    height:55px;
-
-    border:none;
-
-    border-radius:50%;
-
-    background:#8b5e3c;
-
-    color:white;
-
-    font-size:1.5rem;
-
-    cursor:pointer;
-
-    opacity:0;
-
-    visibility:hidden;
-
-    transition:.3s;
-
-    z-index:9999;
-}
-
-#btnTopo:hover{
-
-    transform:scale(1.1);
-}
-
-#btnTopo.mostrar{
-
-    opacity:1;
-
-    visibility:visible;
-}
-
-/* HERO AUTORA */
-
-.hero-autora{
-
-    height:70vh;
-
-    background:url("../img/carolina.png");
-
-    background-size:cover;
-
-    background-position:center;
-
-    position:relative;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-}
-
-.overlay-autora{
-
-    position:absolute;
-
-    inset:0;
-
-    background:rgba(0,0,0,.6);
-}
-
-.hero-autora-content{
-
-    position:relative;
-
-    z-index:2;
-
-    color:white;
-
-    text-align:center;
-
-    padding:20px;
-}
-
-.hero-autora-content h1{
-
-    font-size:3.5rem;
-
-    margin-bottom:20px;
-}
-
-/* BIOGRAFIA */
-
-.bio-grid{
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:50px;
-
-    align-items:center;
-
-    max-width:1200px;
-
-    margin:auto;
-}
-
-.foto-carolina{
-
-    width:100%;
-
-    border-radius:20px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
-}
-
-/* TIMELINE */
-
-.timeline{
-
-    max-width:900px;
-
-    margin:auto;
-
-    position:relative;
-}
-
-.timeline::before{
-
-    content:"";
-
-    position:absolute;
-
-    left:130px;
-
-    top:0;
-
-    width:4px;
-
-    height:100%;
-
-    background:#8b5e3c;
-
-    border-radius:10px;
-}
-
-.timeline-item{
-
-    margin:40px 0;
-
-    display:flex;
-
-    align-items:center;
-
-    gap:60px;
-
-    position:relative;
-}
-
-.timeline-item::before{
-
-    content:"";
-
-    width:16px;
-
-    height:16px;
-
-    background:#8b5e3c;
-
-    border-radius:50%;
-
-    position:absolute;
-
-    left:124px;
-
-    z-index:2;
-
-    border:3px solid #f5f2eb;
-}
-
-.timeline-date{
-
-    background:#8b5e3c;
-
-    color:white;
-
-    padding:10px 20px;
-
-    border-radius:10px;
-
-    font-weight:bold;
-}
-
-.timeline-content{
-
-    background:white;
-
-    padding:20px;
-
-    border-radius:15px;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
-
-/* DESENHO */
-
-.desenho-grupo{
-
-    display:block;
-
-    max-width:600px;
-
-    width:100%;
-
-    margin:40px auto;
-
-    border-radius:20px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.2);
-}
-
-.texto-central{
-
-    text-align:center;
-}
-
-/* RESPONSIVO */
-
-@media(max-width:900px){
-
-    .bio-grid{
-
-        grid-template-columns:1fr;
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
     }
 
-    .timeline::before{
-
-        left:20px;
+    .hero h2 {
+        font-size: 1.2rem;
     }
 
-    .timeline-item{
-
-        flex-direction:column;
-
-        align-items:flex-start;
-
-        padding-left:40px;
+    .logo-area {
+        flex-direction: column;
     }
 
-}
-
-/* HERO LIVRO */
-
-.hero-livro{
-
-    height:70vh;
-
-    background:url("../img/livro-bg.jpg");
-
-    background-size:cover;
-
-    background-position:center;
-
-    position:relative;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-}
-
-.overlay-livro{
-
-    position:absolute;
-
-    inset:0;
-
-    background:rgba(0,0,0,.6);
-}
-
-.hero-livro-content{
-
-    position:relative;
-
-    z-index:2;
-
-    color:white;
-
-    text-align:center;
-}
-
-.hero-livro-content h1{
-
-    font-size:4rem;
-}
-
-/* DIÁRIO */
-
-.diario-container{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-    gap:30px;
-}
-
-.diario{
-
-    background:#fffdf7;
-
-    border-left:8px solid #8b5e3c;
-
-    padding:25px;
-
-    border-radius:10px;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
-
-/* HORÁRIOS */
-
-.horarios{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:15px;
-
-    flex-wrap:wrap;
-
-    margin:30px 0;
-}
-
-.horarios button{
-
-    background:#8b5e3c;
-
-    color:white;
-
-    border:none;
-
-    padding:15px 25px;
-
-    border-radius:10px;
-
-    cursor:pointer;
-
-    transition:.3s;
-}
-
-.horarios button:hover{
-
-    background:#6d4428;
-}
-
-#momento{
-
-    max-width:800px;
-
-    margin:auto;
-
-    background:white;
-
-    padding:30px;
-
-    border-radius:15px;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-
-    text-align:center;
-}
-
-/* HERO REALIDADE */
-
-.hero-realidade{
-
-    height:70vh;
-
-    background:url("../img/brasil-atual.jpg");
-
-    background-size:cover;
-
-    background-position:center;
-
-    position:relative;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-}
-
-.overlay-realidade{
-
-    position:absolute;
-
-    inset:0;
-
-    background:rgba(0,0,0,.65);
-}
-
-.hero-realidade-content{
-
-    position:relative;
-
-    z-index:2;
-
-    color:white;
-
-    text-align:center;
-
-    max-width:900px;
-}
-
-.hero-realidade-content h1{
-
-    font-size:3.5rem;
-
-    margin-bottom:20px;
-}
-
-/* COMPARAÇÃO */
-
-.comparacao{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-
-    gap:30px;
-}
-
-.comparacao-card{
-
-    background:white;
-
-    padding:30px;
-
-    border-radius:15px;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
-
-.comparacao-card h3{
-
-    color:#8b5e3c;
-
-    margin-bottom:15px;
-}
-
-.comparacao-card hr{
-
-    margin:20px 0;
-}
-
-/* GRÁFICOS */
-
-.grafico{
-
-    max-width:900px;
-
-    margin:auto;
-}
-
-.barra{
-
-    margin:25px 0;
-}
-
-.barra span{
-
-    font-weight:bold;
-
-    display:block;
-
-    margin-bottom:8px;
-}
-
-.progresso{
-
-    color:white;
-
-    padding:12px;
-
-    border-radius:8px;
-
-    font-weight:bold;
-}
-
-.fome{
-
-    width:95%;
-
-    background:#8b0000;
-}
-
-.desigualdade{
-
-    width:90%;
-
-    background:#b22222;
-}
-
-.pobreza{
-
-    width:85%;
-
-    background:#cd5c5c;
-}
-
-.educacao{
-
-    width:60%;
-
-    background:#4682b4;
-}
-
-/* REFLEXÃO */
-
-.reflexao{
-
-    max-width:1000px;
-
-    margin:auto;
-
-    background:white;
-
-    padding:40px;
-
-    border-radius:20px;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
-
-.reflexao p{
-
-    margin-bottom:20px;
-
-    text-align:justify;
-}
-
-/* FRASE */
-
-.frase-impacto{
-
-    text-align:center;
-
-    padding:40px;
-
-    background:#2c1810;
-
-    color:white;
-
-    border-radius:20px;
-}
-
-.frase-impacto h2{
-
-    color:white;
-
-    margin-bottom:20px;
-}
-
-/* HERO GALERIA */
-
-.hero-galeria{
-
-    height:70vh;
-
-    background:url("../img/galeria-bg.jpg");
-
-    background-size:cover;
-
-    background-position:center;
-
-    position:relative;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-}
-
-.overlay-galeria{
-
-    position:absolute;
-
-    inset:0;
-
-    background:rgba(0,0,0,.65);
-}
-
-.hero-galeria-content{
-
-    position:relative;
-
-    z-index:2;
-
-    color:white;
-
-    text-align:center;
-
-    max-width:900px;
-
-    padding:20px;
-}
-
-.hero-galeria-content h1{
-
-    font-size:3.5rem;
-
-    margin-bottom:20px;
-}
-
-/* GALERIA */
-
-.galeria-img{
-
-    display:block;
-
-    width:100%;
-
-    max-width:900px;
-
-    margin:30px auto;
-
-    border-radius:20px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
-}
-
-.legenda{
-
-    text-align:center;
-
-    font-style:italic;
-
-    color:#555;
-}
-
-/* GRID DE FOTOS */
-
-.grid-fotos{
-
-    display:grid;
-
-    grid-template-columns:repeat(2, 1fr);
-
-    gap:30px;
-
-    margin-top:40px;
-
-    max-width:1000px;
-
-    margin-left:auto;
-
-    margin-right:auto;
-}
-
-.grid-fotos img{
-
-    width:100%;
-
-    height:600px;
-
-    object-fit:cover;
-
-    border-radius:15px;
-
-    transition:.4s;
-
-    cursor:pointer;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-}
-
-.grid-fotos img:hover{
-
-    transform:scale(1.03);
-}
-
-@media(max-width:768px){
-
-    .grid-fotos{
-
-        grid-template-columns:1fr;
+    nav ul {
+        flex-direction: column;
     }
 
+    .grid-fotos {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ╔════════════════════════════════════════════════════════════════╗ */
+/* ║               SEÇÃO LIVRO - O LIVRO / O DIÁRIO                 ║ */
+/* ╚════════════════════════════════════════════════════════════════╝ */
+
+/* Hero da página do livro */
+.hero-livro {
+    height: 70vh;
+    background: url("../assets/livro-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-livro {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-livro-content {
+    position: relative;
+    z-index: 2;
+    color: var(--cor-texto-branco);
+    text-align: center;
+}
+
+.hero-livro-content h1 {
+    font-size: 4rem;
+}
+
+.hero-livro-content p {
+    font-size: 1.1rem;
+    margin-top: var(--espacamento-pequeno);
+}
+
+/* Grade de diários */
+.diario-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--espacamento-grande);
+}
+
+.diario {
+    background: #fffdf7;
+    border-left: 8px solid var(--cor-primaria);
+    padding: var(--espacamento-xl);
+    border-radius: 10px;
+    box-shadow: var(--sombra-leve);
+}
+
+/* Horários interativos */
+.horarios {
+    display: flex;
+    justify-content: center;
+    gap: var(--espacamento-pequeno);
+    flex-wrap: wrap;
+    margin: var(--espacamento-grande) 0;
+}
+
+.horarios button {
+    background: var(--cor-primaria);
+    color: var(--cor-texto-branco);
+    border: none;
+    padding: var(--espacamento-pequeno) var(--espacamento-xl);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: var(--transicao);
+}
+
+.horarios button:hover {
+    background: var(--cor-primaria-escura);
+}
+
+/* Caixa de momento do dia */
+#momento {
+    max-width: 800px;
+    margin: auto;
+    background: var(--cor-fundo-card);
+    padding: var(--espacamento-grande);
+    border-radius: 15px;
+    box-shadow: var(--sombra-leve);
+    text-align: center;
+}
+
+/* ╔════════════════════════════════════════════════════════════════╗ */
+/* ║           SEÇÃO REALIDADE - BRASIL ATUAL / COMPARAÇÃO          ║ */
+/* ╚════════════════════════════════════════════════════════════════╝ */
+
+/* Hero da página de realidade */
+.hero-realidade {
+    height: 70vh;
+    background: url("../assets/brasil-atual.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-realidade {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.hero-realidade-content {
+    position: relative;
+    z-index: 2;
+    color: var(--cor-texto-branco);
+    text-align: center;
+    max-width: 1000px;
+}
+
+.hero-realidade-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: var(--espacamento-media);
+}
+
+/* Grade de comparação */
+.comparacao {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--espacamento-grande);
+}
+
+.comparacao-card {
+    background: var(--cor-fundo-card);
+    padding: var(--espacamento-grande);
+    border-radius: 15px;
+    box-shadow: var(--sombra-leve);
+}
+
+.comparacao-card h3 {
+    color: var(--cor-primaria);
+    margin-bottom: var(--espacamento-pequeno);
+}
+
+.comparacao-card hr {
+    margin: var(--espacamento-media) 0;
+}
+
+/* Gráficos de barras */
+.grafico {
+    max-width: 900px;
+    margin: auto;
+}
+
+.barra {
+    margin: 25px 0;
+}
+
+.barra span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.progresso {
+    color: var(--cor-texto-branco);
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.fome {
+    width: 95%;
+    background: var(--cor-fome);
+}
+
+.desigualdade {
+    width: 90%;
+    background: var(--cor-desigualdade);
+}
+
+.pobreza {
+    width: 85%;
+    background: var(--cor-pobreza);
+}
+
+.educacao {
+    width: 60%;
+    background: var(--cor-educacao);
+}
+
+/* Seção de reflexão */
+.reflexao {
+    max-width: 1000px;
+    margin: auto;
+    background: var(--cor-fundo-card);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: var(--sombra-leve);
+}
+
+.reflexao p {
+    margin-bottom: var(--espacamento-media);
+    text-align: justify;
+}
+
+/* Frase com impacto */
+.frase-impacto {
+    text-align: center;
+    padding: 40px;
+    background: var(--cor-fundo-header);
+    color: var(--cor-texto-branco);
+    border-radius: 20px;
+}
+
+.frase-impacto h2 {
+    color: var(--cor-texto-branco);
+    margin-bottom: var(--espacamento-media);
+}
+
+/* ╔════════════════════════════════════════════════════════════════╗ */
+/* ║              SEÇÃO GALERIA - PRODUÇÕES DO GRUPO                ║ */
+/* ╚════════════════════════════════════════════════════════════════╝ */
+
+/* Hero da página galeria */
+.hero-galeria {
+    height: 70vh;
+    background: url("../assets/codigo-galeria.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-galeria {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.hero-galeria-content {
+    position: relative;
+    z-index: 2;
+    color: var(--cor-texto-branco);
+    text-align: center;
+    max-width: 900px;
+    padding: var(--espacamento-media);
+}
+
+.hero-galeria-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: var(--espacamento-media);
+}
+
+/* Imagens da galeria */
+.galeria-img {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: var(--sombra-media);
+}
+
+.legenda {
+    text-align: center;
+    font-style: italic;
+    color: #555;
+}
+
+/* Grade de fotos com 2 colunas */
+.grid-fotos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--espacamento-grande);
+    margin-top: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-fotos img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: var(--transicao-longa);
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.grid-fotos img:hover {
+    transform: scale(1.03);
 }

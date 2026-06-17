@@ -1,408 +1,179 @@
 <!DOCTYPE html>
-
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>O Livro - Quarto de Despejo</title>
 
-    <link rel="stylesheet"
-          href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
+    <!-- CONTAINER DO HEADER PARA "IMPORTAÇÃO" -->
+    <div id="header-container"></div>
 
-<header>
-
-    <div class="logo-area">
-
-        <a href="https://www.cotuca.unicamp.br/" target="_blank" rel="noopener noreferrer">
-            <img src="img/logo-cotuca.png" alt="Logo Cotuca">
-        </a>
-
-        <div class="titulo-site">
-
-            <h2>Quarto de Despejo</h2>
-
-            <p>Projeto Multiletramentos</p>
-
+    <!-- SEÇÃO DESTAQUE DO LIVRO -->
+    <section class="hero-livro">
+        <div class="overlay-livro"></div>
+        <div class="hero-livro-content">
+            <h1>O Livro</h1>
+            <p>Um retrato da fome, da desigualdade e da luta pela sobrevivência.</p>
         </div>
+    </section>
 
-        <a href="https://www.unicamp.br/" target="_blank" rel="noopener noreferrer">
-            <img src="img/logo-unicamp.png" alt="Logo Unicamp">
-        </a>
+    <!-- SEÇÃO RESUMO DA OBRA -->
+    <section class="hidden">
+        <h2>Sobre a Obra</h2>
+        <div class="container">
+            <p>Publicado em 1960, Quarto de Despejo é uma coletânea de diários escritos por Carolina Maria de Jesus durante os anos em que viveu na Favela do Canindé, em São Paulo.</p>
+            <br>
+            <p>Em seus relatos, Carolina descreve a rotina da pobreza, a busca diária por alimento, as dificuldades enfrentadas por seus filhos e as desigualdades existentes na sociedade brasileira.</p>
+            <br>
+            <p>O livro tornou-se um marco da literatura brasileira por apresentar a realidade da favela sob a perspectiva de quem realmente vivia nela.</p>
+        </div>
+    </section>
 
-    </div>
+    <!-- SEÇÃO TEMAS PRINCIPAIS -->
+    <section class="hidden">
+        <h2>Temas Principais</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">🍞</div>
+                <h3>Fome</h3>
+                <p>A principal preocupação da autora é conseguir alimento para seus filhos.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🏚️</div>
+                <h3>Favela</h3>
+                <p>O livro mostra a realidade do Canindé e das periferias urbanas.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">⚖️</div>
+                <h3>Desigualdade</h3>
+                <p>Contrastes entre a riqueza da cidade e a pobreza da favela.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">👩🏿</div>
+                <h3>Mulher Negra</h3>
+                <p>A autora relata os desafios enfrentados por mulheres negras e pobres.</p>
+            </div>
+        </div>
+    </section>
 
-    <nav>
+    <!-- TRECHOS -->
 
-        <ul>
+    <section class="hidden">
+        <h2>O Diário de Carolina</h2>
 
-            <li><a href="index.html">Início</a></li>
+        <div class="diario-container">
+            <div class="diario">
+                <h3>1955</h3>
+                <p>
+                    Os registros mostram a luta diária
+                    para obter comida, água e condições
+                    mínimas de sobrevivência.
+                </p>
+            </div>
+            <div class="diario">
+                <h3>A Cidade</h3>
+                <p>
+                    Carolina observa os contrastes entre
+                    a região central e a favela,
+                    destacando as desigualdades sociais.
+                </p>
+            </div>
+            <div class="diario">
+                <h3>A Esperança</h3>
+                <p>
+                    Apesar das dificuldades, a autora
+                    mantém o sonho de publicar seus
+                    escritos e melhorar de vida.
+                </p>
+            </div>
+        </div>
+    </section>
 
-            <li><a href="autora.html">Carolina</a></li>
+    <!-- DIA NA VIDA -->
+    <section class="hidden">
+        <h2>Um Dia na Vida de Carolina</h2>
 
-            <li><a href="livro.html">O Livro</a></li>
-
-            <li><a href="realidade.html">Brasil Atual</a></li>
-
-            <li><a href="galeria.html">Galeria</a></li>
-
-        </ul>
-
-    </nav>
-
-</header>
-
-<!-- HERO -->
-
-<section class="hero-livro">
-
-    <div class="overlay-livro"></div>
-
-    <div class="hero-livro-content">
-
-        <h1>
-            O Livro
-        </h1>
-
-        <p>
-            Um retrato da fome, da desigualdade
-            e da luta pela sobrevivência.
+        <p class="texto-central">
+            Clique em um horário para acompanhar
+            uma simulação baseada nos relatos da autora.
         </p>
 
-    </div>
+        <div class="horarios">
+            <button onclick="mostrarMomento('manha')">
+                06:00
+            </button>
 
-</section>
+            <button onclick="mostrarMomento('meio')">
+                12:00
+            </button>
 
-<!-- RESUMO -->
+            <button onclick="mostrarMomento('tarde')">
+                18:00
+            </button>
 
-<section class="hidden">
+            <button onclick="mostrarMomento('noite')">
+                22:00
+            </button>
+        </div>
 
-    <h2>
-        Sobre a Obra
-    </h2>
+        <div id="momento">Selecione um horário.</div>
+    </section>
 
-    <div class="container">
+    <!-- ANÁLISE GEOGRÁFICA -->
 
-        <p>
+    <section class="hidden">
+        <h2>Análise Geográfica</h2>
 
-            Publicado em 1960, Quarto de Despejo é
-            uma coletânea de diários escritos por
-            Carolina Maria de Jesus durante os anos
-            em que viveu na Favela do Canindé,
-            em São Paulo.
-
-        </p>
-
-        <p>
-
-            Em seus relatos, Carolina descreve a
-            rotina da pobreza, a busca diária por
-            alimento, as dificuldades enfrentadas
-            por seus filhos e as desigualdades
-            existentes na sociedade brasileira.
-
-        </p>
-
-        <p>
-
-            O livro tornou-se um marco da literatura
-            brasileira por apresentar a realidade
-            da favela sob a perspectiva de quem
-            realmente vivia nela.
-
-        </p>
-
-    </div>
-
-</section>
-
-<!-- TEMAS -->
-
-<section class="hidden">
-
-    <h2>
-        Temas Principais
-    </h2>
-
-    <div class="cards">
-
-        <div class="card">
-
-            <div class="card-icon">
-                🍞
+        <div class="cards">
+            <div class="card">
+                <h3>Espaço Urbano</h3>
+                <p>
+                    O livro mostra como o espaço urbano
+                    é marcado por desigualdades e
+                    exclusão social.
+                </p>
             </div>
 
-            <h3>
-                Fome
-            </h3>
-
-            <p>
-                A principal preocupação da autora
-                é conseguir alimento para seus filhos.
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <div class="card-icon">
-                🏚️
+            <div class="card">
+                <h3>Segregação</h3>
+                <p>
+                    A favela representa a separação
+                    espacial entre diferentes grupos
+                    sociais.
+                </p>
             </div>
 
-            <h3>
-                Favela
-            </h3>
-
-            <p>
-                O livro mostra a realidade do
-                Canindé e das periferias urbanas.
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <div class="card-icon">
-                ⚖️
+            <div class="card">
+                <h3>Questão Social</h3>
+                <p>
+                    A pobreza não aparece como um
+                    problema individual, mas como uma
+                    consequência de processos sociais.
+                </p>
             </div>
-
-            <h3>
-                Desigualdade
-            </h3>
-
-            <p>
-                Contrastes entre a riqueza da cidade
-                e a pobreza da favela.
-            </p>
-
         </div>
+    </section>
 
-        <div class="card">
+    <!-- CONTAINER DO FOOTER PARA "IMPORTAÇÃO" -->
+    <div id="footer-container"></div>
 
-            <div class="card-icon">
-                👩🏿
-            </div>
-
-            <h3>
-                Mulher Negra
-            </h3>
-
-            <p>
-                A autora relata os desafios enfrentados
-                por mulheres negras e pobres.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- TRECHOS -->
-
-<section class="hidden">
-
-    <h2>
-        O Diário de Carolina
-    </h2>
-
-    <div class="diario-container">
-
-        <div class="diario">
-
-            <h3>
-                1955
-            </h3>
-
-            <p>
-
-                Os registros mostram a luta diária
-                para obter comida, água e condições
-                mínimas de sobrevivência.
-
-            </p>
-
-        </div>
-
-        <div class="diario">
-
-            <h3>
-                A Cidade
-            </h3>
-
-            <p>
-
-                Carolina observa os contrastes entre
-                a região central e a favela,
-                destacando as desigualdades sociais.
-
-            </p>
-
-        </div>
-
-        <div class="diario">
-
-            <h3>
-                A Esperança
-            </h3>
-
-            <p>
-
-                Apesar das dificuldades, a autora
-                mantém o sonho de publicar seus
-                escritos e melhorar de vida.
-
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- DIA NA VIDA -->
-
-<section class="hidden">
-
-    <h2>
-        Um Dia na Vida de Carolina
-    </h2>
-
-    <p class="texto-central">
-
-        Clique em um horário para acompanhar
-        uma simulação baseada nos relatos da autora.
-
-    </p>
-
-    <div class="horarios">
-
-        <button onclick="mostrarMomento('manha')">
-            06:00
-        </button>
-
-        <button onclick="mostrarMomento('meio')">
-            12:00
-        </button>
-
-        <button onclick="mostrarMomento('tarde')">
-            18:00
-        </button>
-
-        <button onclick="mostrarMomento('noite')">
-            22:00
-        </button>
-
-    </div>
-
-    <div id="momento">
-
-        Selecione um horário.
-
-    </div>
-
-</section>
-
-<!-- ANÁLISE GEOGRÁFICA -->
-
-<section class="hidden">
-
-    <h2>
-        Análise Geográfica
-    </h2>
-
-    <div class="cards">
-
-        <div class="card">
-
-            <h3>
-                Espaço Urbano
-            </h3>
-
-            <p>
-
-                O livro mostra como o espaço urbano
-                é marcado por desigualdades e
-                exclusão social.
-
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <h3>
-                Segregação
-            </h3>
-
-            <p>
-
-                A favela representa a separação
-                espacial entre diferentes grupos
-                sociais.
-
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <h3>
-                Questão Social
-            </h3>
-
-            <p>
-
-                A pobreza não aparece como um
-                problema individual, mas como uma
-                consequência de processos sociais.
-
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<footer>
-
-    <h3>
-        Projeto Multiletramentos
-    </h3>
-
-    <p>
-        Quarto de Despejo • Carolina Maria de Jesus
-    </p>
-
-    <div class="integrantes">
-
-        <h4>Integrantes</h4>
-
-        <ul>
-
-            <li>Henrique Lopes</li>
-            <li>Henrique Manica</li>
-            <li>Vinícius Centurião</li>
-            <li>Daniel Senzaki</li>
-            <li>Eduardo Lage</li>
-            <li>Guilherme Braz</li>
-
-        </ul>
-
-    </div>
-
-</footer>
-
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/components_loader.js"></script>
 
 </body>
 
