@@ -1,130 +1,95 @@
 <!DOCTYPE html>
-
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Galeria</title>
 
-    <link rel="stylesheet"
-          href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
 
-<!-- CABEÇALHO COM LOGO E MENU DE NAVEGAÇÃO -->
-<header>
-    <div class="logo-area">
-        <a href="https://www.cotuca.unicamp.br/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/logo-cotuca.png" alt="Logo Cotuca">
-        </a>
-        <div class="titulo-site">
-            <h2>Quarto de Despejo</h2>
-            <p>Projeto Multiletramentos</p>
+    <!-- CONTAINER DO HEADER PARA "IMPORTAÇÃO" -->
+    <div id="header-container"></div>
+
+    <!-- SEÇÃO DESTAQUE COM IMAGEM DE FUNDO -->
+    <section class="hero-galeria">
+        <div class="overlay-galeria"></div>
+        <div class="hero-galeria-content">
+            <h1>Galeria do Projeto</h1>
+            <p>Produções desenvolvidas pelo grupo para interpretar e divulgar a obra Quarto de Despejo.</p>
         </div>
-        <a href="https://www.unicamp.br/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/logo-unicamp.png" alt="Logo Unicamp">
-        </a>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="autora.html">Carolina</a></li>
-            <li><a href="livro.html">O Livro</a></li>
-            <li><a href="realidade.html">Brasil Atual</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-        </ul>
-    </nav>
-</header>
+    </section>
 
-<!-- SEÇÃO DESTAQUE COM IMAGEM DE FUNDO -->
-<section class="hero-galeria">
-    <div class="overlay-galeria"></div>
-    <div class="hero-galeria-content">
-        <h1>Galeria do Projeto</h1>
-        <p>Produções desenvolvidas pelo grupo para interpretar e divulgar a obra Quarto de Despejo.</p>
-    </div>
-</section>
-
-<!-- SEÇÃO INTRODUTÓRIA -->
-<section class="hidden">
-    <h2>Nosso Trabalho</h2>
-    <div class="container">
-        <p>Esta página reúne as produções desenvolvidas pelos integrantes do grupo durante a realização do projeto de multiletramentos.</p>
-        <p>O objetivo foi apresentar a obra Quarto de Despejo utilizando diferentes linguagens e formas de expressão.</p>
-    </div>
-</section>
-
-<!-- SEÇÃO DESENHO -->
-<section class="hidden">
-    <h2>Desenho de Carolina Maria de Jesus</h2>
-    <img src="assets/desenho-grupo.jpg" alt="Desenho da Carolina" class="galeria-img">
-    <p class="legenda">Produção artística realizada pelo grupo.</p>
-</section>
-
-<!-- SEÇÃO ARTE 3D -->
-<section class="hidden">
-    <h2>Arte Tridimensional</h2>
-    <img src="assets/arte3d.jpg" alt="Arte Tridimensional" class="galeria-img">
-    <p class="legenda">Representação inspirada nos temas e ambientes presentes em Quarto de Despejo.</p>
-</section>
-
-<!-- SEÇÃO BASTIDORES -->
-<section class="hidden">
-    <h2>Bastidores da Produção</h2>
-    <div class="grid-fotos">
-        <img src="assets/processo1.jpg" alt="Processo 1">
-        <img src="assets/processo2.jpg" alt="Processo 2">
-    </div>
-</section>
-
-<!-- SEÇÃO COM DESTAQUES -->
-<section class="hidden">
-    <h2>O que buscamos representar?</h2>
-    <div class="cards">
-        <div class="card">
-            <div class="card-icon">📖</div>
-            <h3>Literatura</h3>
-            <p>Valorizar a importância histórica e literária da obra.</p>
+    <!-- SEÇÃO INTRODUTÓRIA -->
+    <section class="hidden">
+        <h2>Nosso Trabalho</h2>
+        <div class="container">
+            <p>Esta página reúne as produções desenvolvidas pelos integrantes do grupo durante a realização do projeto de multiletramentos.</p>
+            <br>
+            <p>O objetivo foi apresentar a obra Quarto de Despejo utilizando diferentes linguagens e formas de expressão.</p>
         </div>
-        <div class="card">
-            <div class="card-icon">🎨</div>
-            <h3>Arte</h3>
-            <p>Traduzir visualmente os sentimentos e reflexões presentes no livro.</p>
+    </section>
+
+    <!-- SEÇÃO DESENHO -->
+    <section class="hidden">
+        <h2>Desenho de Carolina Maria de Jesus</h2>
+        <img src="assets/desenho-grupo.jpg" alt="Desenho da Carolina" class="galeria-img">
+        <p class="legenda">Produção artística realizada pelo grupo.</p>
+    </section>
+
+    <!-- SEÇÃO ARTE 3D -->
+    <section class="hidden">
+        <h2>Arte Tridimensional</h2>
+        <img src="assets/arte3d.jpg" alt="Arte Tridimensional" class="galeria-img">
+        <p class="legenda">Representação inspirada nos temas e ambientes presentes em Quarto de Despejo.</p>
+    </section>
+
+    <!-- SEÇÃO BASTIDORES -->
+    <section class="hidden">
+        <h2>Bastidores da Produção</h2>
+        <div class="grid-fotos">
+            <a href="assets/processo1.jpg" target="_blank"><img src="assets/processo1.jpg" alt="Processo 1"></a>
+            <a href="assets/processo2.jpg" target="_blank"><img src="assets/processo2.jpg" alt="Processo 2"></a>
         </div>
-        <div class="card">
-            <div class="card-icon">🌎</div>
-            <h3>Sociedade</h3>
-            <p>Relacionar a obra com problemas sociais ainda presentes atualmente.</p>
+    </section>
+
+    <!-- SEÇÃO COM DESTAQUES -->
+    <section class="hidden">
+        <h2>O que buscamos representar?</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">📖</div>
+                <h3>Literatura</h3>
+                <p>Valorizar a importância histórica e literária da obra.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🎨</div>
+                <h3>Arte</h3>
+                <p>Traduzir visualmente os sentimentos e reflexões presentes no livro.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🌎</div>
+                <h3>Sociedade</h3>
+                <p>Relacionar a obra com problemas sociais ainda presentes atualmente.</p>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- RODAPÉ COM INFORMAÇÕES DO PROJETO -->
-<footer>
-    <h3>Projeto Multiletramentos</h3>
-    <p>Quarto de Despejo • Carolina Maria de Jesus</p>
-    <div class="integrantes">
-        <h4>Integrantes</h4>
-        <ul>
-            <li>Henrique Lopes</li>
-            <li>Henrique Manica</li>
-            <li>Vinícius Centurião</li>
-            <li>Daniel Senzaki</li>
-            <li>Eduardo Lage</li>
-            <li>Guilherme Braz</li>
-        </ul>
-    </div>
-</footer>
+    <!-- CONTAINER DO FOOTER PARA "IMPORTAÇÃO" -->
+    <div id="footer-container"></div>
 
-<script src="js/script.js"></script>
-
+    <script src="js/script.js"></script>
+    <script src="js/components_loader.js"></script>
 </body>
 
 </html>

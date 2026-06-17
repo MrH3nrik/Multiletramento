@@ -790,7 +790,7 @@ footer {
 /* Hero da página galeria */
 .hero-galeria {
     height: 70vh;
-    background: url("../assets/galeria-bg.jpg");
+    background: url("../assets/codigo-galeria.png");
     background-size: cover;
     background-position: center;
     position: relative;
