@@ -12,260 +12,84 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
 
-    <!-- MENU -->
+    <!-- CONTAINER DO HEADER PARA "IMPORTAÇÃO" -->
+    <div id="header-container"></div>
 
-    <header>
-
-        <div class="logo-area">
-
-            <a href="https://www.cotuca.unicamp.br/" target="_blank" rel="noopener noreferrer">
-                <img src="img/logo-cotuca.png" alt="Logo Cotuca">
-            </a>
-
-            <div class="titulo-site">
-                <h2>Quarto de Despejo</h2>
-                <p>Projeto Multiletramentos</p>
-            </div>
-
-            <a href="https://www.unicamp.br/" target="_blank" rel="noopener noreferrer">
-                <img src="img/logo-unicamp.png" alt="Logo Unicamp">
-            </a>
-
-        </div>
-
-        <nav>
-
-            <ul>
-
-                <li><a href="index.html">Início</a></li>
-                <li><a href="autora.html">Carolina</a></li>
-                <li><a href="livro.html">O Livro</a></li>
-                <li><a href="realidade.html">Brasil Atual</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-
-            </ul>
-
-        </nav>
-
-    </header>
-
-    <!-- HERO -->
-
+    <!-- SEÇÃO DESTAQUE COM IMAGEM DE FUNDO E CHAMADA PARA AÇÃO -->
     <section class="hero">
-
         <div class="hero-overlay"></div>
-
         <div class="hero-content">
-
-            <h1>
-                QUARTO DE DESPEJO
-            </h1>
-
-            <h2>
-                O diário que revelou ao Brasil a realidade da favela
-            </h2>
-
-            <p>
-                Uma obra marcante de Carolina Maria de Jesus que expõe a fome,
-                a desigualdade e a luta pela sobrevivência nas periferias urbanas.
-            </p>
-
-            <a href="livro.html" class="btn">
-                Conhecer a obra
-            </a>
-
+            <h1>QUARTO DE DESPEJO</h1>
+            <h2>O diário que revelou ao Brasil a realidade da favela</h2>
+            <p>Uma obra marcante de Carolina Maria de Jesus que expõe a fome, a desigualdade e a luta pela sobrevivência nas periferias urbanas.</p>
+            <a href="livro.html" class="btn">Conhecer a obra</a>
         </div>
-
     </section>
 
-    <!-- INTRODUÇÃO -->
-
+    <!-- SEÇÃO INTRODUTÓRIA COM CONTEXTO DA OBRA -->
     <section class="intro hidden">
-
         <div class="container">
-
-            <h2>
-                Uma voz que não podia mais ser ignorada
-            </h2>
-
-            <p>
-                Publicado em 1960, Quarto de Despejo reúne os diários escritos por
-                Carolina Maria de Jesus durante os anos em que viveu na favela do
-                Canindé, em São Paulo.
-            </p>
-
-            <p>
-                A obra transformou a literatura brasileira ao mostrar a realidade
-                da pobreza a partir da perspectiva de quem a vivia diariamente.
-            </p>
-
+            <h2>Uma voz que não podia mais ser ignorada</h2>
+            <p>Publicado em 1960, Quarto de Despejo reúne os diários escritos por Carolina Maria de Jesus durante os anos em que viveu na favela do Canindé, em São Paulo.</p>
+            <p>A obra transformou a literatura brasileira ao mostrar a realidade da pobreza a partir da perspectiva de quem a vivia diariamente.</p>
         </div>
-
     </section>
 
-    <!-- CARDS -->
-
+    <!-- SEÇÃO COM CARDS PARA NAVEGAR ENTRE TÓPICOS -->
     <section class="cards-section hidden">
-
-        <h2>
-            Explore o projeto
-        </h2>
-
+        <h2>Explore o projeto</h2>
         <div class="cards">
-
             <a href="autora.html" class="card">
-
-                <div class="card-icon">
-                    👩🏿
-                </div>
-
-                <h3>
-                    Carolina Maria de Jesus
-                </h3>
-
-                <p>
-                    Conheça a trajetória da autora e sua importância para a literatura brasileira.
-                </p>
-
+                <div class="card-icon">👩🏿</div>
+                <h3>Carolina Maria de Jesus</h3>
+                <p>Conheça a trajetória da autora e sua importância para a literatura brasileira.</p>
             </a>
-
             <a href="livro.html" class="card">
-
-                <div class="card-icon">
-                    📖
-                </div>
-
-                <h3>
-                    O Livro
-                </h3>
-
-                <p>
-                    Descubra os temas centrais, personagens e trechos marcantes da obra.
-                </p>
-
+                <div class="card-icon">📖</div>
+                <h3>O Livro</h3>
+                <p>Descubra os temas centrais, personagens e trechos marcantes da obra.</p>
             </a>
-
             <a href="realidade.html" class="card">
-
-                <div class="card-icon">
-                    🌎
-                </div>
-
-                <h3>
-                    Brasil Atual
-                </h3>
-
-                <p>
-                    Compare os problemas apresentados no livro com a realidade contemporânea.
-                </p>
-
+                <div class="card-icon">🌎</div>
+                <h3>Brasil Atual</h3>
+                <p>Compare os problemas apresentados no livro com a realidade contemporânea.</p>
             </a>
-
         </div>
-
     </section>
 
-    <!-- CITAÇÃO -->
-
+    <!-- SEÇÃO DE CITAÇÃO MARCANTE -->
     <section class="quote hidden">
-
         <div class="quote-box">
-
-            <p>
-                "O Brasil precisa ser dirigido por uma pessoa que já passou fome."
-            </p>
-
-            <span>
-                — Carolina Maria de Jesus
-            </span>
-
+            <p>"O Brasil precisa ser dirigido por uma pessoa que já passou fome."</p>
+            <span>— Carolina Maria de Jesus</span>
         </div>
-
     </section>
 
-    <!-- DESTAQUES -->
-
+    <!-- SEÇÃO COM TEMAS PRINCIPAIS DA OBRA -->
     <section class="highlights hidden">
-
-        <h2>
-            Temas abordados na obra
-        </h2>
-
+        <h2>Temas abordados na obra</h2>
         <div class="highlight-grid">
-
-            <div class="highlight">
-                🍞
-                <h3>Fome</h3>
-            </div>
-
-            <div class="highlight">
-                🏚️
-                <h3>Favela</h3>
-            </div>
-
-            <div class="highlight">
-                ⚖️
-                <h3>Desigualdade</h3>
-            </div>
-
-            <div class="highlight">
-                👩🏿
-                <h3>Mulher Negra</h3>
-            </div>
-
-            <div class="highlight">
-                📚
-                <h3>Educação</h3>
-            </div>
-
-            <div class="highlight">
-                🏙️
-                <h3>Urbanização</h3>
-            </div>
-
+            <div class="highlight">🍞 <h3>Fome</h3></div>
+            <div class="highlight">🏚️ <h3>Favela</h3></div>
+            <div class="highlight">⚖️ <h3>Desigualdade</h3></div>
+            <div class="highlight">👩🏿 <h3>Mulher Negra</h3></div>
+            <div class="highlight">📚 <h3>Educação</h3></div>
+            <div class="highlight">🏙️ <h3>Urbanização</h3></div>
         </div>
-
     </section>
 
-    <!-- RODAPÉ -->
-
-    <footer>
-
-        <h3>Projeto Multiletramentos</h3>
-
-        <p>
-            Baseado na obra <strong>Quarto de Despejo</strong>,
-            de Carolina Maria de Jesus.
-        </p>
-
-        <div class="integrantes">
-
-            <h4>Integrantes do Grupo</h4>
-
-            <ul>
-                <li>Henrique Lopes</li>
-                <li>Henrique Manica</li>
-                <li>Vinícius Centurião</li>
-                <li>Daniel Senzaki</li>
-                <li>Eduardo Lage</li>
-                <li>Guilherme Braz</li>
-            </ul>
-
-        </div>
-
-        <p class="creditos">
-            Colégio Técnico de Campinas (COTUCA) • UNICAMP
-        </p>
-
-    </footer>
+    <!-- CONTAINER DO FOOTER PARA "IMPORTAÇÃO" -->
+    <div id="footer-container"></div>
 
     <script src="js/script.js"></script>
+    <script src="js/components_loader.js"></script>
 
 </body>
 
